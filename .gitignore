@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+.env
+plan.md
+/.venv
+sqlite_edit.db
+.idea/
+__pychache__
