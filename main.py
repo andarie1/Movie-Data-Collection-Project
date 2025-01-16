@@ -244,6 +244,7 @@ if __name__ == "__main__":
                 'user': os.environ.get('user'),
                 'password': os.environ.get('password'),
                 'database': 'sakila'}
+    
     db_reader = DatabaseReader(**dbconfig)
     db_edit = DatabaseEdit()
     app = Application(db_reader, db_edit)

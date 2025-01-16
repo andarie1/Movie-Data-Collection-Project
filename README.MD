@@ -7,6 +7,7 @@ Database Integration: Store the collected movie data in a structured database fo
 This project can be a valuable tool for building a movie database for personal use or further analysis.
 
 Getting Started
+
 This section will provide instructions on how to set up and run the project. It will include details on:
 
 Prerequisites (e.g., Python libraries(mysql.connector, tabulate, re, datetime, dotenv and pathlib),

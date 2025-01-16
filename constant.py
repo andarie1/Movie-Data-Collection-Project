@@ -9,6 +9,7 @@ Choose search-type:
 q. Exit
 """
 
+
 class SqlQueries:
     SEARCH_BY_KEYWORD_Q = """
                 SELECT ROW_NUMBER() OVER (ORDER BY title) AS num, 
