@@ -1,4 +1,5 @@
 import os
+import sys
 from constant import *
 import mysql.connector
 import sqlite3
@@ -28,6 +29,7 @@ class DatabaseReader:
 
         except Exception as e:
             Exceptions.handle(e)
+            sys.exit(1)
 
     def search_by_keyword(self, keyword, page=1, per_page=10):
         """Ищет фильмы по ключевому слову в названии или описании с нумерацией."""
@@ -47,6 +49,7 @@ class DatabaseReader:
 
         except Exception as e:
             Exceptions.handle(e)
+            return None
 
     def search_by_genre_year(self, genre, year, page=1, per_page=10):
         """Ищет фильмы по жанру и году выпуска."""
@@ -99,6 +102,7 @@ class DatabaseEdit: #corrected
     def close_connection(self):
         if self.conn:
             self.conn.close()
+            print("Connection closed.")
 
 
 class Application:
